@@ -74,7 +74,7 @@ public class PlayerAttack : MonoBehaviour
             .Where(d => d != null)
             .ToList();
 
-        foreach (IDamageable damageable in damageables)
+        foreach (var damageable in damageables)
         {
             damageable.TakeDamage(damage);
         }
