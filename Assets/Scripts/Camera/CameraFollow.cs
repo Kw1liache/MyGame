@@ -33,7 +33,7 @@ public class CameraFollow : MonoBehaviour
         if (player == null)
             return;
 
-        Vector3 targetPosition = player.position + offset;
+        var targetPosition = player.position + offset;
 
         targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
         targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
