@@ -19,7 +19,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (player == null)
         {
-            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+            var playerObject = GameObject.FindGameObjectWithTag("Player");
 
             if (playerObject != null)
             {
